@@ -7,6 +7,9 @@ import {
     UserIcon
 } from '@heroicons/react/solid'
 
+import Link from 'next/link'
+
+
 function Header() {
     return (
         <header className="sticky top-0 z-10 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -27,7 +30,7 @@ function Header() {
             </div>
             {/* right */}
             <div className="flex space-x-4 items-center justify-end text-gray-500">
-                <p className="hidden md:inline-flex cursor-pointer">Become a host</p>
+                <Link href="/" className="hidden md:inline-flex">Become a host</Link>
                 <GlobeAltIcon className="h-6 cursor-pointer" />
 
                 <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
